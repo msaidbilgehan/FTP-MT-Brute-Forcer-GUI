@@ -1,0 +1,7 @@
+{
+    "host": "5.2.84.221",
+    "port": 21,
+    "username": "root",
+    "timeout": 5,
+    "max_Thread_Number": 5
+}

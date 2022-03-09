@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <author>Muhammed Said BİLGEHAN</author>
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>898</width>
+    <height>429</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="2" column="0" colspan="9">
+     <widget class="Line" name="line">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QPushButton" name="pushButton_Start_Process">
+      <property name="text">
+       <string>Start to Processes</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QPushButton" name="pushButton_Load_Wordlist">
+      <property name="text">
+       <string>Load Wordlist</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="4">
+     <widget class="QPushButton" name="pushButton_Process_Pause">
+      <property name="text">
+       <string>Pause</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="0" colspan="6">
+     <widget class="QPlainTextEdit" name="plainTextEdit_Terminal_Output">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(0, 255, 0);</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1" colspan="5">
+     <widget class="QProgressBar" name="progressBar_Process">
+      <property name="value">
+       <number>0</number>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="2">
+     <widget class="QPushButton" name="pushButton_Save_Process">
+      <property name="text">
+       <string>Save Process</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="5">
+     <widget class="QPushButton" name="pushButton_Process_Stop">
+      <property name="text">
+       <string>Stop</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="3">
+     <widget class="QPushButton" name="pushButton_Load_Process">
+      <property name="text">
+       <string>Load Process</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLCDNumber" name="lcdNumber_Tested_Words"/>
+    </item>
+    <item row="4" column="6" rowspan="3" colspan="3">
+     <widget class="QGroupBox" name="groupBox_Settings">
+      <property name="title">
+       <string>Settings</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="2" column="0">
+        <widget class="QGroupBox" name="groupBox_IP_Configurations_2">
+         <property name="title">
+          <string>Other Settings</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="4" column="1">
+           <widget class="QLCDNumber" name="lcdNumber_Active_Threads"/>
+          </item>
+          <item row="1" column="1">
+           <widget class="QSpinBox" name="spinBox_Timeout">
+            <property name="minimum">
+             <number>0</number>
+            </property>
+            <property name="maximum">
+             <number>1000</number>
+            </property>
+            <property name="value">
+             <number>5</number>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_Timeout">
+            <property name="text">
+             <string>Timeout:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_Username">
+            <property name="text">
+             <string>Username:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="lineEdit_Username">
+            <property name="text">
+             <string>root</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_Max_Thread_Number">
+            <property name="text">
+             <string>Max Number of Thread:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QSpinBox" name="spinBox_Max_Thread_Number">
+            <property name="minimum">
+             <number>1</number>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="label_Alive_Thread">
+            <property name="text">
+             <string>Alive Threads:</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QGroupBox" name="groupBox_IP_Configurations">
+         <property name="title">
+          <string>IP Configurations</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_4">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_Host">
+            <property name="text">
+             <string>Host:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1" colspan="2">
+           <widget class="QSpinBox" name="spinBox_Port">
+            <property name="minimum">
+             <number>1</number>
+            </property>
+            <property name="maximum">
+             <number>99999</number>
+            </property>
+            <property name="value">
+             <number>21</number>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_Port">
+            <property name="text">
+             <string>Port:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1" colspan="2">
+           <widget class="QLineEdit" name="lineEdit_Host">
+            <property name="inputMask">
+             <string>0000.0000.0000.0000</string>
+            </property>
+            <property name="text">
+             <string>192.168.0.1</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QPushButton" name="pushButton_Save_Settings">
+         <property name="text">
+          <string>Save Settings</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="pushButton_Load_Settings">
+         <property name="text">
+          <string>Load Settings</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="action_About_Page">
+   <property name="text">
+    <string>&amp;About</string>
+   </property>
+   <property name="toolTip">
+    <string>About</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+ <designerdata>
+  <property name="gridDeltaX">
+   <number>10</number>
+  </property>
+  <property name="gridDeltaY">
+   <number>10</number>
+  </property>
+  <property name="gridSnapX">
+   <bool>true</bool>
+  </property>
+  <property name="gridSnapY">
+   <bool>true</bool>
+  </property>
+  <property name="gridVisible">
+   <bool>true</bool>
+  </property>
+ </designerdata>
+</ui>
