@@ -10,5 +10,5 @@ if __name__ == "__main__":
     app, ui = init_and_run_UI(
         "FTP Login Brute Forcer",
         Ui_FTP_Brute_Forcer,
-        UI_File_Path="ftp_cracker_UI.ui.ui"
+        UI_File_Path="ftp_cracker_UI.ui"
     )
