@@ -13,7 +13,7 @@ port = 21
 def is_correct(password):
     # initialize the FTP server object
     server = ftplib.FTP()
-    print(f"[!] Trying", password)
+    print("[!] Trying", password)
     try:
         # tries to connect to FTP server with a timeout of 5
         server.connect(host, port, timeout=5)

@@ -363,7 +363,7 @@ class Ui_FTP_Brute_Forcer(Structure_UI):
                     self.terminal_Print(f"|-- [-] Max Timeout Try Exceeded {counter_Timeout}")
                     break
             else:
-                self.terminal_Print(f"|-- [-] Sleeping 0.1 secs")
+                self.terminal_Print("|-- [-] Sleeping 0.1 secs")
                 sleep(0.1)
         
     
