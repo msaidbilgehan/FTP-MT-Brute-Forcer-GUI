@@ -300,8 +300,7 @@ class Ui_FTP_Brute_Forcer(Structure_UI):
             # login failed, wrong credentials
             pass
         except ftplib.all_errors as error:
-            errorcode_string = str(error).split(None, 1)[0]
-            if errorcode_string == "110":
+            if (errorcode_string := str(error).split(None, 1)[0]) == "110":
                 is_Timeout = True
                 exception += f" | ERRNO: {errorcode_string}"
             is_Timeout = True
